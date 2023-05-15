@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Coffee Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% load static %}
+
+</head>
+
+<body >
+    <h1 align="center">Welcome to Signup Page!</h1>
+    <!-- Button to open the modal login form -->
+
+    <style>
+        .block {
+            display: table-cell;
+            width: 20%;
+            border: none;
+            background-color: deepskyblue;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+            .block:hover {
+                background-color: #ddd;
+                color: black;
+            }
+    </style>
+
+    <style>
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+
+    <br />
+
+    <img src="{% static 'coffee.jpg' %}" height="300" width="500" class="center" />
+
+    <br />
+
+    <style>
+
+    button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    </style>
+    <div class="container">
+        <a
+            href="register">
+            <button type="button" class="block"> Signup</button>
+        </a>
+    </div>
+
+</body>
+</html>
